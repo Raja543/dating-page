@@ -17,11 +17,20 @@
   border-radius: 5px;
 }
 
+.mobile-screen {
+  border: 5px solid black;
+  border-radius: 25px;
+  height: 82vh;
+  max-width: 70%;
+  margin: auto;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 50px;
+  max-width: 70%;
 }
 
 .card {
