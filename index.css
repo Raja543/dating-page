@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Lora&display=swap');
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .heading {
   text-align: center;
   font-size: 2rem;
@@ -16,12 +22,132 @@
   border-radius: 5px;
 }
 
+
 .mobile-screen {
-  border: 5px solid black;
+  border: 1px solid #000;
   border-radius: 25px;
-  height: 82vh;
+  box-shadow: 0 0 5px #000;
+  position: relative;
+  width: 300px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.btn-close,
+.btn-favorite {
+  position: absolute;
+  bottom: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-close {
+  right: 20px;
+}
+
+.btn-favorite {
+  right: 60px;
+}
+
+.btn-close span,
+.btn-favorite span {
+  display: block;
+  line-height: 30px;
+  text-align: center;
+}
+
+.btn-close span {
+  transform: rotate(45deg);
+}
+
+.btn-favorite span {
+  color: red;
+}
+
+.gen {
+  padding-top: 10px;
+  height: 50px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name-pattern {
+  text-align: center;
   margin: auto;
 }
+
+.person-detail {
+  text-align: center;
+  margin: auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  padding-top: 10px;
+}
+
+th {
+  color: gray;
+  font-size: 10px;
+  padding: 10px;
+}
+
+td {
+  padding: 0 20px 15px;
+  color: #000;
+}
+
+.mobile-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #FFE4E1;
+}
+
+.button {
+  position: absolute;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+}
+
+.left-button {
+  left: 70px;
+  background-color: #f1c40f;
+}
+
+.right-button {
+  right: 70px;
+  background-color: red;
+}
+
+.heart-icon {
+  color: #fff;
+}
+
+.cross-icon {
+  color: #fff;
+}
+
 
 .card-container {
   display: flex;
@@ -43,20 +169,24 @@ img {
   width: 40px;
 }
 
+.boy-img {
+  width: 240px;
+  margin: auto;
+  display: block;
+}
+
 .img {
   margin-top: 10px;
 }
 
-.card-head {
-}
 
 .card-para {
-  font-family :'Times New Roman', Times, serif;
-  font-size : 16px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
   text-align: justify;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 100px) {
   .container {
     flex-direction: column;
   }
